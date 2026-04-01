@@ -106,3 +106,9 @@ table th, table td {
   text-align: center;       /* 左右の中央揃え */
   vertical-align: middle;   /* 上下の中央揃え */
 }
+input[type="textfield"], label,  button {
+	font-size: 24px;
+}
+select, select option {
+	font-size: 24px;
+}

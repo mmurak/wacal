@@ -7,20 +7,21 @@
 		<link rel="stylesheet" href="./wakaru.css">
 	</head>
 	<body>
-		<div style="display: flex;">
+		<div style="display: block;">
 			<select id="INPUTTYPE">
 				<option value="WAREKI" selected>和暦</option>
 				<option value="GREGORIAN">西暦（グレゴリオ暦）</option>
 				<option value="JULIAN">西暦（ユリウス暦）</option>
 			</select>
+			<br>
 			<label for="GENGOU">元号
 			<input type="textfield" id="GENGOU" name="GENGOU" SIZE="8" value=""></input></label>
 			<label for="NEN">
 			<input type="textfield" id="NEN" name="NEN" SIZE="4" value="" autocapitalize="off" autocomplete="off"></input>年</label>
-			<div class="checkbox-wrapper-10">
+			<br>
+			<div class="checkbox-wrapper-10" style="display: flex;">
 				<input type="checkbox" id="URUU" name="URUU" class="tgl tgl-flip"></input>
 				<label class="tgl-btn" data-tg-off="" data-tg-on="閏" for="URUU"></label>
-			</div>
 			<label for="TSUKI">
 			<select id="TSUKI">
 				<option value="0" selected>大小月を表示</option>
@@ -37,6 +38,7 @@
 				<option value="11">11月</option>
 				<option value="12">12月</option>
 			</select>
+			</div>
 			<label for="HI">
 			<input type="textfield" id="HI" name="HI" SIZE="2" value="" autocapitalize="off" autocomplete="off"></input>日</label>
 		</div>

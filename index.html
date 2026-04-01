@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>wacal</title>
+		<link rel="shortcut icon" href="kiwi-bird-red.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./wakaru.css">
+	</head>
+	<body>
+		<div style="display: flex;">
+			<select id="INPUTTYPE">
+				<option value="WAREKI" selected>和暦</option>
+				<option value="GREGORIAN">西暦（グレゴリオ暦）</option>
+				<option value="JULIAN">西暦（ユリウス暦）</option>
+			</select>
+			<label for="GENGOU">元号
+			<input type="textfield" id="GENGOU" name="GENGOU" SIZE="8" value=""></input></label>
+			<label for="NEN">
+			<input type="textfield" id="NEN" name="NEN" SIZE="4" value="" autocapitalize="off" autocomplete="off"></input>年</label>
+			<div class="checkbox-wrapper-10">
+				<input type="checkbox" id="URUU" name="URUU" class="tgl tgl-flip"></input>
+				<label class="tgl-btn" data-tg-off="" data-tg-on="閏" for="URUU"></label>
+			</div>
+			<label for="TSUKI">
+			<select id="TSUKI">
+				<option value="0" selected>大小月を表示</option>
+				<option value="1">1月</option>
+				<option value="2">2月</option>
+				<option value="3">3月</option>
+				<option value="4">4月</option>
+				<option value="5">5月</option>
+				<option value="6">6月</option>
+				<option value="7">7月</option>
+				<option value="8">8月</option>
+				<option value="9">9月</option>
+				<option value="10">10月</option>
+				<option value="11">11月</option>
+				<option value="12">12月</option>
+			</select>
+			<label for="HI">
+			<input type="textfield" id="HI" name="HI" SIZE="2" value="" autocapitalize="off" autocomplete="off"></input>日</label>
+		</div>
+		<button onclick="go()">作表する</button>
+		<div id="OUTAREA"></div>
+
+		<script src="./scripts/CyclicCalendar.js"></script>
+		<script src="./scripts/WesternCalendar.js"></script>
+		<script src="./scripts/JapaneseCalendarData.js"></script>
+		<script src="./scripts/JapaneseCalendar.js"></script>
+		<script src="./scripts/Main.js"></script>
+	</body>
+</html>
